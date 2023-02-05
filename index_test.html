@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水害対策-home</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="test.css" />
+    <!--===== Boxicons CSS =====-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">水害対策</a>
+
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="index_jokyo.html">水害状況</a></li>
+            <li><a href="index_hinan.html">避難場所</a></li>
+            <li><a href="index_test.html">水害対策の診断</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+    <form id="shitsumon" name="shitsumon" onsubmit="check(); return false;">
+        <div class="formbox">
+        <ul>
+            <li>
+                <p class="question" >何年に建てられた？</p>
+                <label><input name="q0" type="radio" value="A" style="transform:scale(1.8);" required="" />
+                    A.1981年5月以前</label><br />
+                <label><input name="q0" type="radio" value="B" style="transform:scale(1.8);" />
+                    B.1981年6月～2000年7年</label><br />
+                <label><input name="q0" type="radio" value="C" style="transform:scale(1.8);" /> C.2000年8月以降</label>
+            </li>
+            <li>
+                <p class="question" >木造か鉄骨か</p>
+                <label><input name="q1" type="radio" value="A" style="transform:scale(1.8);" required="" />
+                    A.木造</label><br />
+                <label><input name="q1" type="radio" value="B" style="transform:scale(1.8);" /> B.鉄骨</label><br />
+            <li>
+                <p class="question" >家の近くに川があるか</p>
+                <label><input name="q2" type="radio" value="A" style="transform:scale(1.8);" required="" />
+                    A.ある</label><br />
+                <label><input name="q2" type="radio" value="B" style="transform:scale(1.8);" /> B.ない</label><br />
+            <li>
+                <p class="question" >家の近くに土砂崩れが起きそうな場所はあるか</p>
+                <label><input name="q3" type="radio" value="A" style="transform:scale(1.8);" required="" />
+                    A.ある</label><br />
+                <label><input name="q3" type="radio" value="B" style="transform:scale(1.8);" /> B.ない</label><br />
+            <li>
+                <p class="question" >家の周辺に高い建物はあるか</p>
+                <label><input name="q4" type="radio" value="A" style="transform:scale(1.8);" required="" />
+                    A.ある</label><br />
+                <label><input name="q4" type="radio" value="B" style="transform:scale(1.8);" /> B.ない</label><br />
+            <li>
+                <p class="question" >地表面から基礎の高さ</p>
+                <label><input name="q5" type="radio" value="A" style="transform:scale(1.8);" required="" />
+                    A.40cm以下</label><br />
+                <label><input name="q5" type="radio" value="B" style="transform:scale(1.8);" /> B.40cm以上</label><br />
+            <li>
+                <p class="question" >周辺の海抜</p>
+                <label><input name="q6" type="radio" value="A" style="transform:scale(1.8);" required="" />
+                    A.5m以上</label><br />
+                <label><input name="q6" type="radio" value="B" style="transform:scale(1.8);" /> B.5m以下</label><br />
+        </ul>
+        </div>
+        <input type="submit" value="判定！" class="hantei" />
+    </form>
+    <div class="kekka" id="kekka">ここに結果が出るよ！</div>
+    </div>
+</body>
+
+</html>

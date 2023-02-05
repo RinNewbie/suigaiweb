@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水害対策-home</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--===== Boxicons CSS =====-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">水害対策</a>
+
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="index_jokyo.html">水害状況</a></li>
+            <li><a href="index_hinan.html">避難場所</a></li>
+            <li><a href="index_test.html">水害対策の診断</a></li>
+        </ul>
+    </nav>
+
+    <div class="images">
+
+        <div class="jokyo" >
+            <ul>
+                <li>リアルタイム水害状況のハザードマップを表示します。</li>
+                <button type="button" onclick="location.href='index_jokyo.html'">
+                    <h1>水害の状況</h1>
+                </button>
+            </ul>
+            <!-- <img src="image/measures.jpg" width="50%" height="70%"><br>
+            <button type="button" onclick="location.href='index_tam.html'">水害の状況</button> -->
+        </div>
+        <br></br>
+        <div class="hinan" >
+            <ul>
+                <li>避難場所と避難場所の状況を表示します。</li>
+                <button type="button" onclick="location.href='index_hinan.html'">
+                    <h1>避難場所</h1>
+                </button>
+            </ul>
+            <!-- <img src="image/evacuation.jpg" width="70%" height="70%"><br>
+            <button type="button" onclick="location.href='index_cuong.html'">避難場所</button> -->
+        </div>
+        <br></br>
+        <div class="test" >
+            <ul>
+                <li>選択のABCで点数を変え、その合計点数によって、安全か危険か表示します。</li>
+                <button type="button" onclick="location.href='index_test.html'">
+                    <h1>全度診断</h1>
+                </button>
+            </ul>
+            <!-- <img src="image/directions.png" width="50%" height="60%"><br>
+            <button type="button" onclick="location.href='index_iwatsubo.html'">道案内</button> -->
+        </div>
+        <br></br>
+    </div>
+</body>
+
+</html>
